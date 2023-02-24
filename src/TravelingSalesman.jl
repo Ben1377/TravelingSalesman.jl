@@ -3,5 +3,5 @@ module TravelingSalesman
     include("util.jl")
     include("generator.jl")
     include("mtz.jl")
-    include("twocomm.jl")
+    include("tree.jl")
 end
