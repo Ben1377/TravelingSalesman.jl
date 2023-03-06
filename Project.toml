@@ -4,6 +4,7 @@ authors = ["Claudio Contardo <ccontard@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
 Gurobi = "2e9cd046-0924-5485-92f1-d5272153d98b"
 JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
