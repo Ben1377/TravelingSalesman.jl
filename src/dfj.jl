@@ -4,7 +4,7 @@ using Graphs
 
 function solve_tsp_dfj(data::TSPData)::Solution
     nnodes = size(data.cost, 1)
-    m = Model(Gurobi.Optimizer)
+    m = Model ( optimizer_with_attributes ( Gurobi . Optimizer , " TimeLimit " => 600))
     @variable(m, x[1 : nnodes, 1 : nnodes], Bin)
     @objective(m, Min, dot(data.cost, x))
     @constraint(m, inflow[i in 1 : nnodes], sum(x[:, i]) == 1)
